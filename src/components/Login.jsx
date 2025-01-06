@@ -11,6 +11,7 @@ const Login = () => {
   const [password, setPassword] = useState("Mrunal@007");
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const [error, setError] = useState("");
 
   const handleLogin = async() => {
     try {
@@ -18,11 +19,12 @@ const Login = () => {
         emailId,
         password
       },{withCredentials:true});
-      //console.log(res.data.user);
-      dispatch(addUser(res.data.user));
-      navigate("/")
+      console.log(res.data);
+      dispatch(addUser(res.data));  
+      return navigate("/")
     } catch (error) {
-      console.error("Error ...",error)
+      setError(error.response.data);
+      console.log(error);
     }
   };
 
@@ -51,6 +53,7 @@ const Login = () => {
                 className="input input-bordered w-full max-w-xs"
               />
             </label>
+           <p className="text-red-700">{error}</p>
           <div className="card-actions justify-end">
             <button className="btn" onClick={handleLogin}>Login</button>
           </div>

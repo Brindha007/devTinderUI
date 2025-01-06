@@ -25,6 +25,7 @@
 # PART 3
 - If token present then it should not logout on page refresh
 - Should not access other pages without login
+- Logout flow 
 
 Body
     NavBar
