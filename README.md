@@ -26,6 +26,9 @@
 - If token present then it should not logout on page refresh
 - Should not access other pages without login
 - Logout flow 
+- Get the feed and add the feed in th store
+- build the user card on feed
+- Edit Profile Feature
 
 Body
     NavBar
