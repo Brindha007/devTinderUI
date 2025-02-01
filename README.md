@@ -29,6 +29,10 @@
 - Get the feed and add the feed in th store
 - build the user card on feed
 - Edit Profile Feature
+- Show toast message on save profile
+
+# PART 4
+ - See all connections
 
 Body
     NavBar
