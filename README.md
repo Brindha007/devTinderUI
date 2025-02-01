@@ -34,6 +34,8 @@
 # PART 4
  - See all connections
  - See all requests 
+ - Accept/Reject connection request
+ 
 Body
     NavBar
     Route=/ => Feed
