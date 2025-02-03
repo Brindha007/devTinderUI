@@ -35,6 +35,10 @@
  - See all connections
  - See all requests 
  - Accept/Reject connection request
+
+# PART 5
+ - Send/Ignore the user card from the feed
+ 
  
 Body
     NavBar
